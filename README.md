@@ -8,16 +8,16 @@ Steps
 3. download most recent forge mdk and extract its contents
 4. copy contents to local repository, commit and push to remote
   - stage all: `git add --all`
-  - commit: `git commit -m "Commit message"
+  - commit: `git commit -m "Commit message"`
   - push: `git push`
 5. in Eclipse choose File -- Import -- Gradle project and choose the local repository directory
 6. wait for Eclipse to finish importing the project
 7. commit newly generated files to repository
-8. at the bottom in Grade tasks choose runClient to launch Minecraft and see if the mod works
+8. at the bottom in Gradle tasks choose `runClient` to launch Minecraft and see if the mod works
 
 If the above steps worked you can proceed as follows:
 1. add `/run/` to the `.gitignore` file
-2. change mod information in build.gradle file
+2. change mod information in `build.gradle` file
   - `version`
   - `group`
   - `archivesBaseName`
@@ -32,7 +32,7 @@ Keep adjusting the mod information:
   - change name of directory of `modname`
   - change filename `modname.java` in directory `modname`
   - change class name and constructor in `modname.java` to match `modname`
-  - in (approx.) line 21 of `modname.java` adjust `@Mod(modid)`
+  - in (approx.) line 21 of `modname.java` adjust `@Mod(modid)` (must not include `-`)
 2. in the local repository under `src\main\resources\META-INF` edit the `mods.toml` file
   - in (approx.) line 18 change `modid`
   - in (approx.) line 44 and 56 change `modid`
