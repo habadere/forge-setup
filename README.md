@@ -10,3 +10,9 @@ Steps
 7. wait for Eclipse to finish importing the project
 8. commit newly generated files to repository
 9. at the bottom in Grade tasks choose runClient to launch Minecraft and see if the mod works
+
+If the above steps worked you can proceed as follows:
+10. change mod information in build.gradle file (version, group, archivesBaseName)
+11. change modid in (approx.) line 103 under data -- workingDirectory -- args
+12. change information for jar manifest (approx. after line 147)
+13. runClient and see if everything still works
