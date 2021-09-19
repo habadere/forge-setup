@@ -17,3 +17,4 @@ If the above steps worked you can proceed as follows:
 3. change information for jar manifest (approx. after line 147)
 4. runClient and see if everything still works
 5. run Gradle task `build` and check that jar is generated in build -- libs directory of repository
+6. add `/run/` to .gitignore
