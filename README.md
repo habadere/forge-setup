@@ -25,3 +25,14 @@ If the above steps worked you can proceed as follows:
   - change information for jar manifest (approx. after line 147)
 3. `runClient` and see if everything still works
 4. run Gradle task `build` and check that jar is generated in build -- libs directory of repository
+
+Keep adjusting the mod information:
+1. in the local repository under `src\main\java\com\yourname\modname`
+  - change name of directory of package `yourname`
+  - change name of directory of `modname`
+  - change filename `modname.java` in directory `modname`
+  - change class name and constructor in `modname.java` to match `modname`
+  - in (approx.) line 21 of `modname.java` adjust `@Mod(modid)`
+2. in the local repository under `src\main\resources\META-INF` edit the `mods.toml` file
+  - in (approx.) line 18 change `modid`
+  - in (approx.) line 44 and 56 change `modid`
